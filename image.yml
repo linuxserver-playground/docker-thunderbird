@@ -8,9 +8,9 @@ summary: |-
 upstream:
   url: https://www.thunderbird.net/
   version:
-    type: command
-    run: |-
-      curl -sX GET http://ppa.launchpad.net/mozillateam/ppa/ubuntu/dists/noble/main/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: thunderbird' | awk -F ': ' '/Version/{print $2;exit}'
+    type: deb_packages
+    index_url: http://ppa.launchpad.net/mozillateam/ppa/ubuntu/dists/noble/main/binary-amd64/Packages.gz
+    package: thunderbird
 
 release:
   branch: master
