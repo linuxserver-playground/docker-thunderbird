@@ -11,6 +11,11 @@ upstream:
     type: deb_packages
     index_url: http://ppa.launchpad.net/mozillateam/ppa/ubuntu/dists/noble/main/binary-amd64/Packages.gz
     package: thunderbird
+  sponsor:
+  - name: Donate to Thunderbird
+    url: https://www.thunderbird.net/en-US/donate/
+  - name: Thunderbird giving FAQ
+    url: https://give.thunderbird.net/
 
 release:
   branch: master
